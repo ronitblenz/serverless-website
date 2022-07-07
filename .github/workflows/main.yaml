@@ -13,6 +13,6 @@ jobs:
         with:
           go-version: ${{ env.GO_VERSION }}
       - name: test get-function
-        run: cd ronit-cloud-resume/get-function && go test -v ./ && cd ../
+        run: cd get-function && go test -v ./ && cd ../../
       - name: test put-function
-        run: cd ronit-cloud-resume/put-function && go test -v ./ && cd ../
+        run: cd put-function && go test -v ./ && cd ../../
