@@ -17,8 +17,8 @@ jobs:
       - name: test put-function
         run: cd put-function && go test -v ./ && cd ../../
 
-  build-and-deploy-infra:
-    needs: test-infra
+  deploy-infra:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
