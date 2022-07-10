@@ -227,7 +227,7 @@
         <h4 style="margin-bottom: 0rem">Serverless Website</h4>
         <div class="row">
           <div class="col-auto">
-            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">06/2022</p>
+            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">07/2022</p>
           </div>
         </div>
         <p>Serverless resume website with view counter using AWS. Built to participate in <a
@@ -235,51 +235,44 @@
           <a href="https://cloudresumechallenge.dev/instructions/">Challenge.</a></p>
         <ul>
           <li>Built a responsive site in HTML using the Bootstrap framework.</li>
-          <li>View counter uses a Lambda function written in Python to update DynamoDB's atomic counter.</li>
+          <li>View counter uses a Lambda function written in GO lang to update DynamoDB's atomic counter.</li>
           <li>The Lambda function runs when API is called and displayed using JavaScript.</li>
           <li>View counter uses a function on the JSON response to bypass API Gateway's decimal encoding limitation.
           </li>
           <li>Website front-end is deployed through CloudFront with an S3 origin.</li>
           <li>Infrastructure is fully automated using CloudFormation and the AWS Serverless Application Model (SAM).
           </li>
-          <li>CI/CD pipeline using GitHub Actions and AWS CodePipeline and CodeDeploy.</li>
+          <li>CI/CD pipeline using GitHub Actions with YAML.</li>
+          <li><a href="https://github.com/ronitblenz/serverless-website">GitHub Link</a></li>
+          <li><a href="https://ronitbanerjee.hashnode.dev/cloud-resume-challenge-tutorial">Write-Up Blog Link</a></li>
           
         </ul>
-        <h4 style="margin-bottom: 0rem">AmbuBot</h4>
+        <h4 style="margin-bottom: 0rem">Developer Environment on AWS EC2 using Terraform</h4>
         <div class="row">
           <div class="col-auto">
-            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">10/2018</p>
+            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">07/2022</p>
           </div>
         </div>
-        <p>The project aims at providing available ambulances at urgent hours located in nearby hospitals. Booking an ambulance and reaching the doorstep is the motive behind helping people in Covid-19 crisis.</p>
+        <p>The project aims at providing a Developer Environment for Testing and Developing over Cloud which is deployed over VPC.</p>
         <ul>
-            <li>The code sample consists of a bot and a website from where the bot can be accessed.</li>
-            <li>The Bot works within WhatsApp. There is a local JSON database from which we draw the location which is provided by the user, then the main function is activated which extracts the sender's phone number , receiver's phone number (Twilio API bot number) and prints the message body.</li>
-            <li> Followed by that, the Beautiful Soup Python Web Scraper fetches data from multiple trusted databases and finally returns the strings to the Twilio API which is again forwarded by the Bot as the nearest reliable Ambulance leads.</li>
+            <li>Made an IAM user through my Root account in AWS.</li>
+            <li>Stored the credentials in aws-vault which helps to execute commands faster and user-specific.</li>
+            <li>Initiated Terraform in my local system and applied for an EC2 using Terraform.</li>
+            <li><a href="https://github.com/ronitblenz/aws-ec2-terraform">GitHub Link</a></li>
+          <li><a href="https://ronitbanerjee.hashnode.dev/ec2-using-terraform">Write-Up Blog Link</a></li>
         </ul>
-        <h4 style="margin-bottom: 0rem">VoiceText</h4>
+        <h4 style="margin-bottom: 0rem">LateCloud</h4>
         <div class="row">
           <div class="col-auto">
-            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">12/2018</p>
+            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">06/2022</p>
           </div>
         </div>
-        <p>This is a web application built using speech-recognition and various technologies to solve a real world problem that I encountered.
+        <p>LateCloud checks the Latency for different Cloud Service Servers from your Locations. It helps to determine which server to choose based on the location you are currently in.
         </p>
         <ul>
-          <li>Used AlanAI to detect the voice and acts as a support system.</li>
-          <li>Twilio API returns the output and provides the text as PDF and also adds mailing services.</li>
-        </ul>
-        <h4 style="margin-bottom: 0rem">EasePDF</h4>
-        <div class="row">
-          <div class="col-auto">
-            <p class="font-weight-light" style="margin-bottom: 0rem; font-size: 15px">11/2018</p>
-          </div>
-        </div>
-        <p>In our daily lives, We encounter a lot of instances where we have to produce a PDF out of an image file for submission of projects, term papers and assignments, which is a very tiresome job. This project aims for a quick and convenient way of doing the same task which is just a few clicks away. It works in a whatsapp-bot mechanism.
-        </p>
-        <ul>
-          <li>JavaScript Library helps to convert the images into PDF file.</li>
-          <li>Whatsapp integration is done via Whatsapp sandbox of Twilio API</li>
+          <li>Uses API to fetch Ping data from DynamoDB and returns the latency.</li>
+          <li>The code is deployed using a YAML file which is involved in Continuous Integration (CI).</li>
+          <li><a href="https://github.com/ronitblenz/LateCloud">GitHub Link</a></li>
         </ul>
 
         <h5 class="text-muted text-uppercase" style="border-bottom: 1.5px solid #9C9C9C">Technologies</h5>
@@ -328,6 +321,27 @@
           </div>
           <div class="col-auto">
             <p style="border-bottom: 1.5px solid #9C9C9C">Python</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">GitHub Actions</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">EC2</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">S3</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">Terraform</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">CloudFormation</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">CloudFront</p>
+          </div>
+          <div class="col-auto">
+            <p style="border-bottom: 1.5px solid #9C9C9C">YAML</p>
           </div>
         </div>
       </div>
