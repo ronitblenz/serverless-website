@@ -2,7 +2,7 @@
 
 **To make this Project, you can follow my step-by-step Documentation in the [link](https://github.com/ronitblenz/100DaysOfCloud) {FROM DAY 2 --> DAY 10}**
 
-This is a sample template for ronit-cloud-resume - Below is a brief explanation of what we have generated for you:
+This is a sample template for ronit-cloud-resume - Below is a brief explanation and file structure of what we have generated for you:
 
 ```bash
 .
